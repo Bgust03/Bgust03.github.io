@@ -1,0 +1,431 @@
+@font-face {
+    font-family: 'CashMarket';
+    src: url(fonts/CashMarket-BoldRounded.ttf);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: CashMarket;
+}
+
+body {
+    background: #672e8c;
+    background: linear-gradient(90deg, rgba(103, 46, 140, 1) 0%, rgba(196, 47, 47, 1) 50%, rgba(196, 136, 51, 1) 100%);
+    min-height: 100vh;
+    color: black;
+}
+
+h1 {
+    display: flex;
+justify-content: center;
+    padding: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    margin-left: 1rem;
+}
+
+.navbar li {
+    display: flex;;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.content li {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+
+footer {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.CVbild {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    margin: 4rem 0 3rem 0rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.CVinfo {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+
+.ListText {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    
+}
+
+.ListText img {
+    width: 30rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.ListText td {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.modal.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-inner img {
+    width: 40rem; height: auto;
+}
+
+/* styling the links */
+.ListText a {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Creating the modal window popup */
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+/* Detecting the click */
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Styling */
+.modal_content {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+}
+
+.modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    text-decoration: none;
+}
+
+td a {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+.text p {
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+}
+
+.contact p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.contact h2 {
+    margin-top: 6rem;
+}
+
+@media (max-width: 649px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .ListText img {
+        width: 70%;
+        height: auto;
+    }
+
+    .contact h2 {
+        
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+}
+
+/* .education {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+        background-color: #ffcccc;
+        width: 70%;
+    } */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ce4848; */
+    margin-bottom: 1rem;
+    max-width: 50%;
+    margin: 0 auto 1rem auto;
+    padding: 0.5rem;
+    border: 3px solid black;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.education h2 {
+    margin-bottom: 1rem;
+}
+
+.education p {
+    margin-bottom: 0.5rem;
+}
+
+.jobbs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ffcccc; */
+    margin-bottom: 1rem;
+    max-width: 50%;
+    margin: 0 auto 1rem auto;
+    border: 3px solid black;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.jobbs h2 {
+    margin-bottom: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.jobbs p {
+    margin-bottom: 0.5rem;
+}
+
+#rubrik {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.info h2 {
+    margin-bottom: 1rem;
+}
+
+.changeColor {
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.repos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repos img {
+    display: flex;
+    justify-content: center;
+}
+
+.repos a {
+    display: flex;
+    justify-content: center;
+}
+
+.repos h2 {
+    margin-bottom: 1rem;
+}
+
+
+.modal2 {
+    background: rgba(77, 77, 77, .7);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal2.open {
+    opacity: 1;
+    z-index: 999;
+}
+
+.modal-inner2 {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: white;
+    padding: 1.5em 2em;
+}
+
+.open-modal-btn {
+    
+}
+
+#loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: spin 1s linear infinite;
+    -webkit-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    pointer-events: none;
+}

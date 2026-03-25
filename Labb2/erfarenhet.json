@@ -1,0 +1,40 @@
+{
+    "educations": [
+        {
+            "id": 1,
+            "schoolName": "LBS Kreativa Gymnasiet Varberg",
+            "subjectName": "E-Sport programmet",
+            "length": "3 år"
+        },
+        {
+            "id": 2,
+            "schoolName": "Folkuniversitet Varberg",
+            "subjectName": "Programmering 1",
+            "length": "5 veckor"
+        },
+        {
+            "id": 3,
+            "schoolName": "Folkuniversitet Varberg",
+            "subjectName": "Matematik 2a",
+            "length": "5 veckor"
+        }
+    ],
+    "workPlaces": [
+        {
+            "id": 1,
+            "name": "CWS-Boco Sweden AB",
+            "employment": "3 år"
+        },
+        {
+            "id": 2,
+            "name": "Ullared",
+            "employment": "1 år"
+        }
+    ],
+    "info": {
+        "title": "Kontaktuppgifter",
+        "name": "Liam Bredahl",
+        "mail": "liambredahl03@gmail.com",
+        "phone": "+46 70-305 29 94"
+    }     
+}
